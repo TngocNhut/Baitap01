@@ -36,30 +36,5 @@
         android:textColor="#666666"
         android:layout_marginTop="6dp"
         android:gravity="center" />
-    
-    <EditText
-        android:id="@+id/edtInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nhập chuỗi ký tự..."
-        android:inputType="text"
-        android:layout_marginBottom="12dp" />
-
-    <Button
-        android:id="@+id/btnReverse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Đảo chuỗi" />
-
-    <TextView
-        android:id="@+id/tvOutput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginTop="16dp"
-        android:textSize="18sp" />
 
 </LinearLayout>
-
-</LinearLayout>
-
