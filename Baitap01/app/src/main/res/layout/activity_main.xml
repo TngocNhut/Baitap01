@@ -1,40 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="#FFFFFF"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/profile"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000">
-    </de.hdodenhof.circleimageview.CircleImageView>
-
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Trần Ngọc Nhất"
-        android:textSize="18sp"
-        android:textColor="#333333"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
 
-    <TextView
-        android:id="@+id/tv_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MSSV: 24162086 - Sinh viên ĐH SPKT TP.HCM"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:layout_marginTop="6dp"
-        android:gravity="center" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#000000" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trần Ngọc Nhất"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV: 24162086 - ĐH SPKT TPHCM"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập chuỗi ký tự..."
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnReverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đảo ngược chuỗi"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
